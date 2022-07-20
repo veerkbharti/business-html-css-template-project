@@ -124,8 +124,12 @@ section {
   border-color: var(--border-color-blue);
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: var(--box-shadow);
+}
+
+.price_point_active {
+  color: var(--text-color-blue);
 }
 
 /* Header Section */
@@ -351,7 +355,6 @@ section {
   margin-bottom: var(--mb-30);
 }
 
-
 .service_section .bottom_item {
   display: grid;
   flex-wrap: wrap;
@@ -533,27 +536,27 @@ section {
   justify-content: center; */
 }
 
-.pricing_card:hover{
+.pricing_card:hover {
   box-shadow: var(--box-shadow);
 }
 
-.pricing_card .top_item{
+.pricing_card .top_item {
   width: 100%;
   margin-bottom: 15px !important;
 }
 
-.pricing_card .btn-outline{
+.pricing_card .btn-outline {
   font-size: 16px;
   font-weight: 500;
 }
 
-.pricing_card .price{
+.pricing_card .price {
   display: block;
   text-align: center;
   font-size: 55px;
   font-weight: 600;
 }
-.pricing_card .price .sup{
+.pricing_card .price .sup {
   font-size: 20px;
   font-weight: 400;
   vertical-align: super;
@@ -565,13 +568,13 @@ section {
   font-weight: 600;
 } */
 
-.pricing_card .price sub{
+.pricing_card .price sub {
   font-size: 18px;
   font-weight: 400;
   color: var(--text-color-gray);
 }
 
-.pricing_card .price_btn{
+.pricing_card .price_btn {
   color: var(--text-color-blue);
   background-color: var(--bg-color-white);
   font-size: 16px;
@@ -582,21 +585,71 @@ section {
   margin-right: 20px;
   text-transform: uppercase;
   border: 2px solid var(--border-color-blue);
-
 }
 
-.pricing_card .price_btn:hover{
+.pricing_card .price_btn:hover {
   color: var(--text-color-white);
   background-color: var(--bg-color-blue-dark);
 }
 
-.pricing_card ul li{
+.pricing_card ul {
+  list-style: none;
+}
+
+.pricing_card ul li {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--text-color-gray);
   margin-bottom: 10px;
-  list-style-type: disc;
 }
 
+.pricing_card ul li i {
+  margin-right: 10px;
+}
 
+/* Team section */
+.team_section .bottom_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team_card {
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.team_card .card_content {
+  width: 100%;
+  height: 20%;
+  background-color: var(--bg-color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.team_card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.team_card .team_name {
+  /* margin-top: 20px; */
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.team_card .team_role {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color-blue);
+  text-align: center;
+}
