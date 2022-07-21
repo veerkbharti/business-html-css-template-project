@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Fontawesome  -->
     <script src="https://kit.fontawesome.com/09009e2b25.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Title -->
     <title>Document</title>
 </head>
 
@@ -412,8 +421,88 @@
     <!-- ------------Subscription section ends -->
 
     <!-- ------------Testimonials section starts -->
-    <section id="testimonial_section" class="container_fluid testimonial_section">
-
+    <section id="testimonial_section" class="container_fluid testimonial_section section_bg_gray">
+        <div class="container">
+            <div class="top_item">
+                <button class="btn-outline mb-20">Customer Reviews</button>
+                <h3 class="mb-20 h3-heading">Our Testimonials</h3>
+                <p class="paragraph text-center mb-20">There are many variations of passages of Lorem Ipsum available,
+                    but the
+                    majority have suffered
+                    alteration in some form.</p>
+            </div>
+            <div class="bottom_item">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slider_item swiper-slide">
+                            <div class="slider_item_content">
+                                <p class="paragraph mb-30">On the other hand denoun with righteous and disliks men who
+                                    are
+                                    beguiled demorae momentc blinded by desire that can</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="slider_item_author">
+                                <img class="author_avatar" src="./assets/images/testimonial/author-1.jpg" alt="">
+                                <div class="author_desc">
+                                    <h5 class="author_name">Abhishek Kumar</h5>
+                                    <span class="author_role paragraph">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item swiper-slide">
+                            <div class="slider_item_content">
+                                <p class="paragraph mb-30">On the other hand denoun with righteous and disliks men who
+                                    are
+                                    beguiled demorae momentc blinded by desire that can</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="slider_item_author">
+                                <img class="author_avatar" src="./assets/images/testimonial/author-1.jpg" alt="">
+                                <div class="author_desc">
+                                    <h5 class="author_name">Abhishek Kumar</h5>
+                                    <span class="author_role paragraph">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item swiper-slide">
+                            <div class="slider_item_content">
+                                <p class="paragraph mb-30">On the other hand denoun with righteous and disliks men who
+                                    are
+                                    beguiled demorae momentc blinded by desire that can</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="slider_item_author">
+                                <img class="author_avatar" src="./assets/images/testimonial/author-1.jpg" alt="">
+                                <div class="author_desc">
+                                    <h5 class="author_name">Abhishek Kumar</h5>
+                                    <span class="author_role paragraph">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item swiper-slide">
+                            <div class="slider_item_content">
+                                <p class="paragraph mb-30">On the other hand denoun with righteous and disliks men who
+                                    are
+                                    beguiled demorae momentc blinded by desire that can</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <div class="slider_item_author">
+                                <img class="author_avatar" src="./assets/images/testimonial/author-1.jpg" alt="">
+                                <div class="author_desc">
+                                    <h5 class="author_name">Abhishek Kumar</h5>
+                                    <span class="author_role paragraph">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination" ></div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- ------------Testimonials section ends -->
 
@@ -448,6 +537,26 @@
 
     <!-- Scripts -->
 
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+             slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: true,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+    </script>
 </body>
 
 </html>
