@@ -706,6 +706,58 @@ section {
   line-height: 23px;
   font-weight: 600;
 }
+
+.blog_section .bottom_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+.blog_section .bottom_item .content_box{
+  /* border: 1px solid red; */
+
+  
+}
+.blog_section .bottom_item .content_box h4{
+
+  font-size: 24px;
+  padding: 20px 0px;
+}
+/* .blog_section .bottom_item .content_box h4 :hover{
+color: #155bd5;
+background-color: red;
+} */
+.blog_section .bottom_item .content_box .img_box img{
+  width: 100%;
+ /* border: 1px solid black; */
+ border-radius: 5px;
+}
+.blog_section .bottom_item .content_box .img_box__content img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.blog_section .bottom_item .content_box .img_box{
+  position: relative;
+}
+.blog_section .bottom_item .content_box .img_box__content{
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+ background-color:#155bd5;
+bottom: 40px;
+right: 20px;
+padding: 6px 15px 6px 7px;
+border-radius: 30px;
+gap: 10px;
+text-transform: uppercase;
+color: #ffffff;
+font-size: 10px;
+}
+.blog_section .bottom_item .content_box .img_box__content span{
+  font: 0px 0px 0px 10px;
+}
 /* ------------------- client-log section ---------------------- */
 
 
