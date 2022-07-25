@@ -931,3 +931,84 @@ font-size: 10px;
   top: 5px;
   right: 5px;
 }
+
+#subscription_section{
+  /* border: 1px solid green; */
+  background-image: url("/assets/images/call-action/overlay.png");
+  height: 500px;
+  background-color:var(--primary-color-blue);
+}
+.get-started{
+
+  /* border: 1px solid green; */
+  
+  height: 400px;
+  margin: auto;
+  /* margin-top: 70px; */
+  /* padding-top: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.get-started>div{
+
+  /* border: 1px solid green; */
+  width: 50%;
+  height: 350px;
+  margin: auto;
+  /* margin-top: 70px; */
+  /* padding-top: 80px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.get-started>div h2{
+
+  /* border: 1px solid yellow; */
+  text-align: center;
+  margin-bottom: 35px;
+  color: white;
+  font-size: 35px;
+}
+
+.get-started>div>div>p{
+
+  /* border: 1px solid gold; */
+ 
+  margin:auto;
+  margin-bottom: 15px;
+  color: white;
+  font-size:16px;
+}
+
+.get-started>div>div:last-child{
+
+  /* border: 1px solid blue; */
+  /* background-color: blue; */
+  /* border-radius: 5px; */
+  width: 30%;
+  margin: auto;
+}
+
+.get-started>div>div{
+
+  /* border: 1px solid white; */
+  text-align: center;
+}
+.get-started>div>div>button{
+
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 25px;
+  padding: 5px;
+  color: white;
+  background-color: transparent;
+}
+.get-started>div>div>button:hover{
+
+  background-color: white;
+  color: blue;
+}
