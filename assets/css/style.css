@@ -11,6 +11,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  /* position: relative; */
 }
 
 /* Variables */
@@ -213,7 +214,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--text-color-gray);
+  color: rgb(221, 215, 215);
   margin-bottom: 30px;
 }
 
@@ -230,9 +231,16 @@ section {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  padding: 10px 35px;
+  padding: 13px 35px;
   border-radius: 4px;
   margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.hero_btn_group .get_started:hover {
+  background-color: var(--bg-color-blue);
+  outline: 1px solid #fff;
+  color: var(--text-color-white);
 }
 
 .hero_btn_group .play_btn {
@@ -835,23 +843,6 @@ font-size: 10px;
   display: flex;
   justify-content: space-between;
 }
-#subscription_section{
-  text-align: center;
-  background-color: #155bd5;
-  color:white;
-
-}
-.get_started{
-  border:4px solid white;
-  border-color: #efefef;
-  background-color: #064cc5;
-  color: #efefef;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  padding: 10px 35px;
-  margin-right: 20px;
-}
 
 /* Footer Section */
 .footer_container {
@@ -941,7 +932,7 @@ font-size: 10px;
 .get-started{
 
   /* border: 1px solid green; */
-  
+
   height: 400px;
   margin: auto;
   /* margin-top: 70px; */
@@ -976,7 +967,7 @@ font-size: 10px;
 .get-started>div>div>p{
 
   /* border: 1px solid gold; */
- 
+
   margin:auto;
   margin-bottom: 15px;
   color: white;
@@ -1013,7 +1004,6 @@ font-size: 10px;
   color: blue;
 }
 
-
 .client-logo{
 
  
@@ -1043,3 +1033,32 @@ font-size: 10px;
   display: flex;
   justify-content: space-between;
 } 
+
+/* Bottom-left action button  */
+
+.bottom_action_btn{
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  z-index: 9999;
+}
+
+.bottom_action_btn img{
+  width: 230px;
+}
+
+/* Back to tom button */
+.back_top_btn{
+  width: 47px;
+  height: 47px;
+  background-color: var(--bg-color-blue);
+  border-radius: 5px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-white);
+  font-size: 28px;
+}
